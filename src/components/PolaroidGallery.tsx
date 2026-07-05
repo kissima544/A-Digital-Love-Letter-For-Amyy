@@ -3,11 +3,19 @@ import { motion, AnimatePresence } from "motion/react";
 import { X, ZoomIn, Heart, Sparkles } from "lucide-react";
 import { PolaroidImage } from "../types";
 
+// Import images directly using ES modules so that Vite bundles and processes them correctly for deployment builds (e.g. Vercel)
+import amyySickVisit from "../assets/images/amyy_sick_visit_1783196989880.jpg";
+import herSelfie from "../assets/images/her_selfie_1783202874037.jpg";
+import starryDreamNight from "../assets/images/starry_dream_night_1783188870575.jpg";
+import sunsetWarmBeach from "../assets/images/sunset_warm_beach_1783188856783.jpg";
+import lavenderFieldDusk from "../assets/images/lavender_field_dusk_1783188896334-1.jpg";
+import roseGoldRose from "../assets/images/rose_gold_rose_1783188883818-1.jpg";
+
 // Import our custom generated images for a fully personalized gallery experience
 const polaroidData: PolaroidImage[] = [
   {
     id: "sick-visit",
-    url: "/src/assets/images/amyy_sick_visit_1783196989880.jpg",
+    url: amyySickVisit,
     caption: "Visiting you when you were under the weather. Even then, your beautiful smile shined brighter than anything else ❤️",
     date: "A Caring Visit",
     aspect: "portrait",
@@ -15,7 +23,7 @@ const polaroidData: PolaroidImage[] = [
   },
   {
     id: "bedroom-selfie",
-    url: "/src/assets/images/her_selfie_1783202874037.jpg",
+    url: herSelfie,
     caption: "The day you grabbed my phone in your room and playfully snapped this beautiful selfie of us together. Your laughter filled the room, making it one of my absolute favorite moments ever ❤️",
     date: "Playful Bedroom Selfie",
     aspect: "portrait",
@@ -23,7 +31,7 @@ const polaroidData: PolaroidImage[] = [
   },
   {
     id: "signout-letter",
-    url: "/src/assets/images/starry_dream_night_1783188870575.jpg",
+    url: starryDreamNight,
     caption: "The beautiful letter you gave me on my sign out day. Holding your words in my hands made that milestone feel infinitely more special and unforgettable. I will treasure it forever ✉️🌌❤️",
     date: "Sign Out Letter",
     aspect: "portrait",
@@ -31,7 +39,7 @@ const polaroidData: PolaroidImage[] = [
   },
   {
     id: "sunset-beach",
-    url: "/src/assets/images/sunset_warm_beach_1783188856783.jpg",
+    url: sunsetWarmBeach,
     caption: "That beautiful selfie you sent me on your way to class. Seeing your bright, lovely face lights up my entire day and makes every single second feel incredibly special. You are my absolute sunshine 🌅🎒💖",
     date: "Class Day Selfie",
     aspect: "portrait",
@@ -39,7 +47,7 @@ const polaroidData: PolaroidImage[] = [
   },
   {
     id: "lavender-dusk",
-    url: "/src/assets/images/lavender_field_dusk_1783188896334-1.jpg",
+    url: lavenderFieldDusk,
     caption: "Your absolute favorite artwork—a stunning sketching of you. Seeing you captured on paper only shows how breathtaking, elegant, and timeless your beauty truly is 🎨✨💜",
     date: "Sketch of You",
     aspect: "portrait",
@@ -47,7 +55,7 @@ const polaroidData: PolaroidImage[] = [
   },
   {
     id: "rose-gold-rose",
-    url: "/src/assets/images/rose_gold_rose_1783188883818-1.jpg",
+    url: roseGoldRose,
     caption: "The gorgeous recent selfie you sent me. Every time I see your beautiful smile, it makes my heart skip a beat and reminds me of how lucky I am to have you in my life 🌹✨💖",
     date: "Your Lovely Selfie",
     aspect: "portrait",
