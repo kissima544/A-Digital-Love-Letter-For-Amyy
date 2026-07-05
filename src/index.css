@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Sacramento&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-handwriting: "Sacramento", cursive;
+}
+
+/* Custom animations and background glow utilities */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.dark-glass-panel {
+  background: rgba(15, 10, 12, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 182, 193, 0.1);
+}
+
+.aurora-glow-1 {
+  background: radial-gradient(circle at 20% 30%, rgba(255, 192, 203, 0.4) 0%, transparent 50%);
+}
+
+.aurora-glow-2 {
+  background: radial-gradient(circle at 80% 70%, rgba(230, 230, 250, 0.4) 0%, transparent 50%);
+}
+
+.aurora-glow-3 {
+  background: radial-gradient(circle at 50% 50%, rgba(255, 215, 0, 0.15) 0%, transparent 60%);
+}
+
+/* Text clipping gradient */
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(135deg, #4a374a 0%, #a37081 50%, #d4a373 100%);
+}
+
+.text-gradient-rose {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(135deg, #b76e79 0%, #e8c5c8 60%, #ffd700 100%);
+}
+
+/* Custom scroll bar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(253, 244, 245, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(212, 163, 115, 0.3);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 163, 115, 0.5);
+}
+
+/* Dynamic glow effect */
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(255, 182, 193, 0.15);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(255, 182, 193, 0.3);
+  }
+}
+
+.pulse-glow {
+  animation: pulseGlow 6s infinite ease-in-out;
+}
+
+/* Base style resets for smooth experiences */
+html {
+  scroll-behavior: smooth;
+  background-color: #fffafb;
+  color: #2c1a1d;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}

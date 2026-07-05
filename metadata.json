@@ -1,0 +1,6 @@
+{
+  "name": "A Digital Love Letter",
+  "description": "A cinematic, luxury-quality premium digital love letter with elegant transitions, an interactive polaroid gallery, handwritten letters, and an immersive ambient soundtrack.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
